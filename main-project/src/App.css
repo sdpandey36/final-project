@@ -1,0 +1,593 @@
+*{
+  margin: 0;
+  padding:0;
+}
+
+/* This is css for map. */
+@import url("~leaflet/dist/leaflet.css");
+.leaflet-container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* This is navbar css */
+.navbar{
+  height: 70px;
+  width: 100%;
+  background-color: #B80C09;
+  /* display: flex; 
+   flex-direction: row; */
+}
+.logo{
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.listitem ul {
+
+  display: flex;
+  flex-direction: row;
+  margin-left: 1200px;
+  margin-top: -23px;
+
+}
+.listitem ul li{
+  margin-left: 20px;
+  list-style: none;
+  /* text-decoration: none; */
+}
+.navbar a{
+  text-decoration: none;
+  color: white;
+}
+
+.navbar a:hover{
+  color: black;
+  transition: 0.3s;
+}
+
+
+.bodypart{
+  height:90vh;
+  width: 100%;
+  background-color: rgb(239 239 239);
+}
+
+
+/* This is home page css */
+.firsttheme{
+font-size: 40px;
+text-align: center;
+padding-top: 60px;
+}
+.secondtheme{
+font-size: 35px;
+text-align: center;
+padding-top: 70px;
+}
+.secondtheme p{
+  height: 3px;
+  width: 286px;
+  background-color: #c01400;
+  margin: auto;
+  border-radius: 57px;
+}
+.formitem{
+  align-items: center;
+}
+
+.frontform form select{
+  height: 41px;
+  width: 200px;
+  font-size: 17px;
+  text-align: center;
+  margin-left: 14px;
+  
+}
+.frontform{
+  margin-top: 2rem;
+}
+#location{
+  margin-left: 35rem;
+  width: 200px;
+  /* height: 50px;
+  line-height: 10px;
+  -webkit-appearance: menulist-button;  
+  -moz-appearance:none; */
+  /* height: 50px; */
+}
+/* #location option{
+ 
+  height: 50px;
+} */
+
+
+
+/* .frontform .bloodclass{
+  height: 20px;
+} */
+/* #bloodgroup{
+margin-left: 8rem;
+
+} */
+.btn-home{
+  text-align: center;
+  margin-top: 3rem;
+}
+#btn{
+  height: 39px;
+  width: 131px;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: #B80C09;
+  color: white;
+  border: 1px;
+}
+
+#btn:hover{
+  /* background-color: #00cd00; */
+  transition: 0.4s;
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+/* Seventh react hook tutorial in which we will learn about how to create a simple login form in react using functional component  */
+.formtable{
+  height:965px;
+  width: 600px;
+  background-color: rgb(239 239 239);
+
+}
+
+/* This is used to hide the arrows from number input */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+
+
+
+.listdata{
+  height: 600px;
+  width: 700px;
+  /* background-color: green; */
+
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+
+}
+.formitem{
+  padding-top: 2rem;
+  text-align: center;
+}
+.formitem #date{
+  height: 26px;
+  width: 300px;
+  border-radius: 10px;
+  border: 1px;
+}
+.formitem .label{
+  font-size: 21px;
+}
+
+
+.btn-home li{
+  list-style: none;
+}
+
+
+.formitem .textarea{
+  height: 31px;
+  width: 336px;
+  border-radius: 7px;
+  border: 1px;
+ 
+}
+.formitem #bloodgroup{
+  height: 32px;
+  width: 336px;
+}
+.btn{
+  height: 40px;
+  width: 85px;
+  font-size: 21px;
+  cursor: pointer;
+}
+/* This is css for fetch api */
+.main-container{
+  display: grid;
+  gap: 50px 30px;
+  grid-template-columns: repeat(3,1fr);
+
+}
+
+.container1{
+  height: 200px;
+  width: 285px;
+  /* background-color: red; */
+  margin-left: 30px;
+}
+
+
+.main-content{
+display: flex;
+}
+.main-content .content{
+  flex-direction: row;
+  margin-left: 5px;
+
+}
+
+
+
+/* This is css for gender  */
+.label input{
+margin-left: 100px;
+}
+
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+/* This is css for signIn form */
+
+/* css for signInform-container */
+.signInform-container{
+  height: 86vh;
+  width: 100%;
+  /* background-color: #61dafb; */
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+/* This is css for signInform */
+.signInform{
+  height: 60vh;
+  width: 40%;
+  background-color: #f9f9f9;
+  /* text-align: center; */
+
+  display:flex ;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  border-radius: 35px;
+ 
+ }
+.contactForm{
+  height: 80vh;
+  width: 40%;
+  background-color: #f9f9f9;
+  /* text-align: center; */
+
+  display:flex ;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  border-radius: 35px;
+ 
+ }
+ .signIntext{
+  margin-top: 30px;
+ }
+ .welcomeText{
+  font-size: 30px;
+
+  
+ }
+ .pleaseText{
+margin-left: 10px;
+
+ }
+ .firstname{
+  margin-top: 20px;
+  font-weight: 600;
+ }
+ .lastname{
+  margin-top: 20px;
+  font-weight: 600;
+ }
+ .email{
+  margin-top: 20px;
+  font-weight: 600;
+ }
+  .textarea{
+  height: 28px;
+  width: 295px;
+  border: 1px solid darkgray;
+  border-radius: 10px;
+  padding-left: 10px;
+ }
+ 
+
+ .textarea:focus { 
+  outline: none !important;
+  border-color: #719ECE;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+
+ .password{
+  margin-top: 20px;
+  font-weight: 600;
+ }
+ 
+
+ .message{
+  margin-top: 20px;
+  font-weight: 600;
+ }
+ .message .msg{
+  height: 100px;
+ }
+
+
+ ::placeholder{
+ 
+  padding-left: 5px;
+ }
+ .rememberAndforget{
+  margin-top: 15px;
+ }
+#rememberMe{
+  margin-left: 4px;
+  font-size: 13px;
+  font-weight: 400;
+}
+#forgetpass{
+  margin-left: 50px;
+  font-size: 13px;
+  font-weight: 400;
+
+}
+
+ .signIN-btn button{
+  margin-top: 15px;
+    height: 30px;
+    width: 288px;
+    background-color: #2196F3;
+    cursor: pointer;
+    border: 1px;
+    border-radius: 10px;
+    color: white;
+ }
+ .signIN-btn button:hover{
+  color:black
+ }
+ .noAccount{
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 13px;
+ }
+
+
+
+/* css for signInform-img*/
+/* .signInform-img{
+  height: 60vh;
+  width: 40%;
+  background-color: #090a0a;
+} */
+.signInform-img img{
+  height: 60vh;
+  width: 78%;
+  
+}
+
+#signUp:hover{
+  color: #2196F3;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* This is css for about page */
+.about-sec{
+	display: flex;
+	padding: 3rem 0;
+	width: 100%;
+	justify-content: center;
+	background: #2c3e50;
+}
+.about-img{
+	width: 250px;
+	height: 250px;
+	margin: 0 3rem;
+}
+.about-img img{
+	height: 100%;
+	width: 100%;
+}
+.about-intro{
+	color: #fff;
+	width: 400px;
+	height: 250px;
+	border-left: 3px solid #00b894;
+	padding-left: 2rem;
+	margin: 0 3rem;
+}
+.about-intro p{
+	margin-top: 1.5rem;
+	font-size: 14px;
+	opacity: .7;
+}
+
+
+
+/* This is css for donars  */
+
+.containerDonar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+.inside-containerDonar{
+  height: 40%;
+  width: 35%;
+  background-color: #d0d0e4;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-radius: 13px;
+  padding-bottom: 2rem;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  
+}
+
+.inside-containerDonar h4{
+  text-align: center;
+}
+
+.inside-containerDonar #btn{
+ height: 2rem;
+ width: 8rem;
+ margin: 0rem 12rem;
+
+margin-top: 2rem;
+}
+.main-contentDonar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+
+/* This is css for RegisterLogin */
+.welcome-text{
+text-align: center;
+font-family: 'Secular One', sans-serif;
+/* margin-top:4rem; */
+font-size: 3rem;
+padding-top: 2rem;
+}
+
+.welcome-text #welcome{
+  color: rgb(60, 144, 18);
+  
+}
+.welcome-text #textcss{
+  color: red;
+
+
+}
+
+.header{
+  height: 10vh;
+  width: 100vw;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* align-items: center; */
+}
+
+
+.profile-container{
+  
+  width: 46%;
+  height: 50%;
+  background-color: lightgray;
+  margin: 5rem auto;
+  align-items: center;
+}
+.form-class{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.profile-container .btn-RegisterLogin{
+margin-left: 20rem;
+}
+
+
+.signIn-container{
+  text-align: center;
+}
+
+.errorMsg{
+  text-align: center;
+  color: red;
+ 
+}
+
+
+#btn-donar{
+  height: 39px;
+  width: 131px;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: #2196F3;
+  color: white;
+  border: 1px;
+  margin-bottom: 3rem;
+  margin-left: 43rem;
+  margin-top: 2rem;
+}
+#btn-donar:hover{
+  background-color: #1587e5;
+  transition: all;
+}

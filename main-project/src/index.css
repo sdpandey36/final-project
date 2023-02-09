@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+/* This is css for RegisterLogin component. */
+
+/* .container{
+  display: flex;
+  flex-direction: row;
+} */
+.header{
+  height: 10vh;
+  width: 100vw;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* align-items: center; */
+}
+
+
+.profile-container{
+  
+  width: 46%;
+  height: 50%;
+  background-color: lightgray;
+  margin: 10rem auto;
+  align-items: center;
+  border-radius: 2rem;
+  
+}
+.form-class{
+  /* margin-top: 2rem; */
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+ 
+}
+
+.profile-container .btn{
+margin-left: 20rem;
+}
+
+
+.signIn-container{
+  text-align: center;
+}
+
+.errorMsg{
+  text-align: center;
+  color: red;
+ 
+}
