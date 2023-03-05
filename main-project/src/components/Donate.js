@@ -18,7 +18,7 @@ const Donate = () => {
 
         email: "",
         address: "",
-        number: "",
+        number: 0,
         dateofbirth: "",
         dateoflastdonate: "",
         bloodgroup: "",
@@ -40,34 +40,8 @@ const Donate = () => {
 
 
 
-    //     const postData=async(e)=>{
-    //         e.preventDefault();
-    //         const {fullname,email,address,number,dateofbirth,bloodgroup,gender,password,cpassword}=userRegistration;
-
-
-
-    //     const res=await fetch("/register",{
-    //         method:"POST",
-    //         headers:{
-    //             "Content-Type":"application/json"
-    //         },
-    //         body:JSON.stringify({
-    //             fullname,email,address,number,dateofbirth,bloodgroup,gender,password,cpassword
-    //         })
-    //     });
-
-
-    //     const data=await res.json();
-    //     if(data.status===422 || !data){
-    //         window.alert("invalid registration");
-    //         console.log("invalid registration");
-    //     }else{
-    //         window.alert("registration successful");
-    //         console.log("registration successful");
-    //     }
-    // }
-
-    const handleSubmit = (e) => {
+       
+    const handleSubmit =async (e) => {
         // console.log(userRegistration.dateoflastdonate)
         const date1 = new Date(userRegistration.dateoflastdonate);
         const elidate = new Date(userRegistration.dateofbirth);
@@ -91,7 +65,7 @@ const Donate = () => {
             const newRecord = { ...userRegistration, id: new Date().getTime().toString() }
             // console.log(records);
             setRecords([...records, newRecord]);
-            window.alert("Thank you for Registration ")
+            window.alert("Thank you for Registration")
 
             setuserRegistration({ fullname: "", email: "", address: "", number: "", dateofbirth: "", dateoflastdonate: "", bloodgroup: "", gender: "" })
         }
@@ -105,6 +79,28 @@ const Donate = () => {
         }
         else {
             alert("Please fill the Data Properly");
+        }
+
+
+        const {fullname,email,address,number,dateofbirth,dateoflastdonate,bloodgroup,gender}=userRegistration;
+        const res=await fetch("/register",{
+            method:"POST",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body:JSON.stringify({
+                fullname,email,address,number,dateofbirth,dateoflastdonate,bloodgroup,gender
+            })
+        });
+
+
+        const data=await res.json();
+        if(data.status===422 || !data){
+            window.alert("invalid registration");
+            console.log("invalid registration");
+        }else{
+            window.alert("registration successful");
+            console.log("registration successful");
         }
     }
 

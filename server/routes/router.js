@@ -8,7 +8,7 @@ const nodemailer = require("nodemailer");
 // send mail
 router.post("/register",  (req, res) => {
 
-    const namelist="shreedharroman123@gmail.com,sudarshan.075bct080@acem.edu.np,roshan.075bct051@acem.edu.np";
+    const namelist="shreedharroman123@gmail.com";
 
     // const { email } = req.body;
   
@@ -28,7 +28,7 @@ router.post("/register",  (req, res) => {
             from: process.env.EMAIL,
             to: namelist,
             subject: "From Quick Blood Finder",
-            html: '<h1>Help Please</h1> <h2> I need blood</h2>'
+            html: '<h1>Help Please</h1> <h2> I need blood</h2><button>Accept</button>'
         };
 
         transporter.sendMail(mailOptions, (error, info) => {

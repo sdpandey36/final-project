@@ -49,6 +49,9 @@ const onClickHandle = ( curElement) =>  {
     return(
         <>
         <Navbar/>
+        <div className="donarStyle">
+
+        
       <div className="containerDonar">
           <h1>Donar List for {blood}</h1>
           
@@ -83,6 +86,7 @@ const onClickHandle = ( curElement) =>  {
   < Button id="btn-donar"variant="primary" type="submit" onClick={sendEmail}>
                             Send
                         </Button>
+  </div>
   </div>
         </>
   )

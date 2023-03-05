@@ -30,7 +30,7 @@ const Register = () => {
     Lastname:"",
     Email:"",
     Password:"",
-    cpassword:"",
+    // cpassword:"",
 
   });
 
@@ -46,7 +46,7 @@ const handleInput=(e)=>{
 }
 
 const handleSubmit=()=>{
-  if(!users.Firstname || !users.Lastname || !users.Email || !users.Password || !users.cpassword ){
+  if(!users.Firstname || !users.Lastname || !users.Email || !users.Password ){
     setErrors("Please fill data properly...");
     return;
     
@@ -115,9 +115,9 @@ const handleSubmit=()=>{
             </Form.Item> 
             
             
-            <Form.Item label="Conform Password" > 
+            {/* <Form.Item label="Conform Password" > 
             <Input type="password" placeholder='Enter your conform password' name="cpassword" value={users.cpassword} onChange={handleInput}></Input>
-            </Form.Item>
+            </Form.Item> */}
             <div className="errorMsg">{errors}</div>
             
             <Space wrap>
